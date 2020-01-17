@@ -122,6 +122,42 @@ p {
     padding-bottom: 20px;  
 }
 
+/* MIDDLE CONTENT STYLES  */
+
+.mid-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.mid-content div {
+    width: 48%;
+    margin: 1% 1% 2%;
+    padding-bottom: 3%;
+    border-bottom: dashed 1px black;
+}
+
+.mid-content div img {
+    margin-bottom: 3%;
+}
+
+.mid-content div p {
+    margin-bottom: 3%;
+}
+
+.mid-content div button {
+    border: 2px solid black;
+    padding: 2% 6%;
+    border-radius:5px;
+    font-size: .8rem;
+}
+
+/* BOTTOM CONTENT STYLES  */
+
+.bottom-content {
+    margin: 4% 0 7%;
+}
+
 /* FOOTER STYLES  */
 
 footer {
