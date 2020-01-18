@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@media screen and (min-width: 730px) {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* END CSS RESETS  */
+
+/* GENERAL STYLES  */
+
+* {
+    box-sizing: border-box;
+    /* border: 1px solid grey !important; */
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-family: 'Rubik', sans-serif;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.container {
+    width: 800px;
+    margin: 1% auto;
+}
+
+/* NAV STYLES  */
+
+.container header .top-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container header .top-menu nav {
+    width: 80%;
+}
+
+.container header .top-menu nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container header .top-menu nav ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.container header .top-menu nav ul li a:hover {
+    color: black;
+}
+
+/* TOP SECTION STYLES  */
+
+.top-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed black;
+}
+
+.top-content :first-child {
+    margin: 2% 0 1%;
+}
+
+.top-content .text-container {
+    width: 100%;
+    padding: 0 1%;
+    padding-bottom: 20px;
+}
+
+/* MIDDLE CONTENT STYLES  */
+
+.mid-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.mid-content div {
+    width: 48%;
+    margin: 1% 1% 2%;
+    padding-bottom: 3%;
+    border-bottom: dashed 1px black;
+}
+
+.mid-content div img {
+    margin-bottom: 3%;
+}
+
+.mid-content div p {
+    margin-bottom: 3%;
+}
+
+.mid-content div button {
+    border: 2px solid black;
+    padding: 2% 6%;
+    border-radius: 5px;
+    font-size: .8rem;
+}
+
+/* BOTTOM CONTENT STYLES  */
+
+.bottom-content {
+    margin: 4% 0 7%;
+}
+
+/* FOOTER STYLES  */
+
+footer {
+    width: 100%;
+    background: black;
+}
+
+footer nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 2%;
+    font-size: 14px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+}
+}
+
+/* STRETCH GOAL  */
+
+@media screen and (max-width: 730px) {
+    
+    /* GENERAL STYLES  */
+    
+    * {
+        max-width: 100%;
+
+    }
+    
+    body {
+        padding: 1%;
+    }
+
+    /* NAV STYLES  */
+
+    .container header .top-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .container header .top-menu nav {
+        width: 80%;
+    }
+    
+    .container header .top-menu nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .container header .top-menu nav ul li {
+        list-style-type: none;
+    }
+    
+    .container header .top-menu nav ul li a {
+        text-decoration: none !important;
+        color: grey;
+    }
+    
+    .container header .top-menu nav ul li a:hover {
+        color: black;
+    }
+
+    /* TOP STYLES  */
+
+    .top-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 20px;
+        border-bottom: 1px dashed black;
+    }
+    
+    .top-content :first-child {
+        margin: 2% 0 1%;
+    }
+    
+    .top-content .text-container {
+        width: 100%;
+        padding: 0 1%;
+        padding-bottom: 20px;
+    }
+
+    /* MID STYLES  */
+
+    .mid-content {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+    
+    .mid-content div {
+        width: 1000%;
+        margin: 1% 1% 2%;
+        padding-bottom: 4%;
+        border-bottom: dashed 1px black;
+    }
+    
+    .mid-content div img {
+        margin: 2% 0 1%;
+    }
+    
+    .mid-content div p {
+        width: 75%;
+        margin-bottom: 3%;
+    }
+    
+    .mid-content div button {
+        border: 2px solid black;
+        padding: 2% 6%;
+        border-radius: 5px;
+        font-size: .8rem;
+    }
+
+    /* BTM STYLES  */
+
+    .bottom-content {
+        margin: 4% 0 7%;
+    }
+
+    /* FOOTER STYLES  */
+
+    footer {
+        width: 100%;
+        background: black;
+    }
+    
+    footer nav {
+        width: 80%;
+        padding: 1%;
+        font-size: 14px;
+    }
+    
+    footer nav ul {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+    }
+    
+    footer nav a {
+        color: white;
+        text-decoration: none;
+    }
+
+}

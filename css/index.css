@@ -47,8 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+/* END CSS RESETS  */
+
+
+/* GENERAL STYLES  */
 * {
     box-sizing: border-box;
+    /* border: 1px solid grey !important; */
 }
 
 html, body {
@@ -68,8 +73,36 @@ p {
 
 .container {
     width: 800px;
-    margin: 0 auto;
+    margin: 1% auto;
 }
+
+/* NAV STYLES  */
+
+.container header .top-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container header .top-menu nav {
+    width: 80%;
+}
+
+.container header .top-menu nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container header .top-menu nav ul li a {
+    text-decoration: none;
+    color: grey;
+}
+
+.container header .top-menu nav ul li a:hover {
+    color: black;
+}
+
+/* TOP SECTION STYLES  */
 
 .top-content {
     display: flex;
@@ -79,11 +112,17 @@ p {
     border-bottom: 1px dashed black;
 }
 
+.top-content :first-child {
+    margin: 2% 0;
+}
+
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
     padding-bottom: 20px;  
 }
+
+/* MIDDLE SECTION STYLES  */
 
 .middle-content {
     margin-bottom: 20px;
@@ -112,6 +151,50 @@ p {
     justify-content: center;
 }
 
+/* INDIVIDUAL BOX STYLES  */
+
+.middle-content .boxes .box-one {
+    background: teal;
+} 
+
+.middle-content .boxes .box-two {
+    background: gold;
+} 
+
+.middle-content .boxes .box-three {
+    background: cadetblue;
+} 
+
+.middle-content .boxes .box-four {
+    background: coral;
+} 
+
+.middle-content .boxes .box-five {
+    background: crimson;
+} 
+
+.middle-content .boxes .box-six {
+    background: forestgreen;
+} 
+
+.middle-content .boxes .box-seven {
+    background: darkorchid;
+} 
+
+.middle-content .boxes .box-eight {
+    background: hotpink;
+} 
+
+.middle-content .boxes .box-nine {
+    background: indigo;
+} 
+
+.middle-content .boxes .box-ten {
+    background: dodgerblue;
+} 
+
+/* BOTTOM SECTION STYLES  */
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -126,18 +209,26 @@ p {
     padding-right: 0;
 }
 
+/* FOOTER STYLES  */
+
 footer {
     width: 100%;
     background: black;
 }
 
 footer nav {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 footer nav a {
